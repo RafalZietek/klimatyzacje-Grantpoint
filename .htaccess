@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteRule #header start 
+RewriteRule #about o-nas 
+RewriteRule #offer oferta 
+RewriteRule #contact kontakt [NE,R,L]
