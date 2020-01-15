@@ -2,36 +2,32 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('nav');
 const list = document.querySelectorAll('nav li');
 const closeNav = document.querySelector('.close');
-const closeArrow = document.querySelector('.arrow');
 
-const hiddenTextAbout = document.querySelector('.more');
+const buttonShowTextAbout = document.querySelector('.more');
 const showTextAbout = document.querySelector('.more_text');
+const hideTextAbout = document.querySelector('.hide_text');
 
 function showNav() {
 	nav.classList.toggle('off');
 	burger.classList.toggle('off');
 }
-
 burger.addEventListener('click', showNav);
 closeNav.addEventListener('click', showNav);
 
 for (i = 0; i < list.length; i++) {
 	list[i].addEventListener('click', showNav);
 }
-function hiddenText() {
-	hiddenTextAbout.classList.toggle('offText');
+function showText() {
+	buttonShowTextAbout.classList.toggle('offText');
 	showTextAbout.classList.remove('more_text');
 	showTextAbout.classList.add('onText');
 }
-hiddenTextAbout.addEventListener('click', hiddenText);
+buttonShowTextAbout.addEventListener('click', showText);
 
-/*wysokość sekcji*/
-const heightHHEader = document.querySelector('#header').clientHeight;
-const heightAbout = document.querySelector('#about').clientHeight;
+function hideText() {
+	buttonShowTextAbout.classList.toggle('offText');
+	showTextAbout.classList.remove('onText');
+	showTextAbout.classList.add('more_text');
+}
+hideTextAbout.addEventListener('click', hideText);
 
-/*odległość sekcji od początku strony*/
-const distanceAbouToStart = document.querySelector('#about').offsetTop;
-
-/*pobranie elementów box sekcji about*/
-const boxes = document.querySelectorAll('.about_belt');
-const articles = document.querySelectorAll('.about_belt p');
