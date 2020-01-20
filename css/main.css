@@ -340,6 +340,64 @@ aside h3:nth-child(2) {
 	cursor: pointer;
 }
 
+/*cookie*/
+.cookie_choices_info {
+	position: fixed;
+	width: 100%;
+	background-color: #ddd;
+	margin: 0;
+	left: 0;
+	bottom: 0;
+	/* padding: 0; */
+	z-index: 4000;
+	text-align: center;
+	color: #fff;
+	line-height: 140%;
+	padding: 10px 0;
+	/* opacity: 0.9; */
+	/* font-family: roboto,Arial; */
+}
+
+.cookie_choices_info .cookie_choices_inner {
+	position: relative;
+	width: initial;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.cookie_choices_info .cookie_choices_text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2em;
+	margin: 10px 20px;
+	color: rgb(84, 133, 243);
+	max-width: 800px;
+	text-align: justify;
+}
+
+.cookie_choices_info .cookie_choices_buttons {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0 10px;
+}
+
+.cookie_choices_info .cookie_choices_button {
+	font-weight: bold;
+	text-transform: UPPERCASE;
+	white-space: nowrap;
+	color: rgb(84, 133, 243);
+	margin-left: 8px;
+	padding: 0 6px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.cookie_choices_info .cookie_choices_button:hover {
+	color: rgb(255, 174, 0);
+}
+
 
 
 /* ==================== animation ================== */
@@ -542,6 +600,14 @@ aside h3:nth-child(2) {
 
 	#contact .socialmedia a {
 		top: 15%;
+	}
+
+	/*cookie*/
+	.cookie_choices_info .cookie_choices_text {
+		display: block;
+		font-size: 1.3em;
+		margin: 10px auto;
+		max-width: 900px;
 	}
 }
 

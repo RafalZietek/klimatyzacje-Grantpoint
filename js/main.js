@@ -2,10 +2,11 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('nav');
 const list = document.querySelectorAll('nav li');
 const closeNav = document.querySelector('.close');
-
 const buttonShowTextAbout = document.querySelector('.more');
 const showTextAbout = document.querySelector('.more_text');
 const hideTextAbout = document.querySelector('.hide_text');
+const cookieChoicesInfo = document.querySelector('.cookie_choices_info');
+const cookieChoiceDismiss = document.querySelector('#cookieChoiceDismiss');
 
 function showNav() {
 	nav.classList.toggle('off');
@@ -31,3 +32,7 @@ function hideText() {
 }
 hideTextAbout.addEventListener('click', hideText);
 
+function hideCookie() {
+	cookieChoicesInfo.classList.add('offText');
+}
+cookieChoiceDismiss.addEventListener('click', hideCookie);
